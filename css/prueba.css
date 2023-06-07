@@ -252,11 +252,12 @@ main .main-index img {
 /*********************************************/
 
 .main-contactos {
-    width: 100%;
+    width: 95%;
+    height: 90%;
     display: grid;
     justify-content: center;
     align-items: center;
-    padding-top: 2rem;
+    padding-top: 1rem;
   
     background-color: black;
 }
