@@ -1,0 +1,12 @@
+.main-index{
+    grid-area:main
+
+    img {   /**crear el achivo para main-index**/
+        display: grid;
+        text-align: center;
+        justify-content: center;
+        width: 80%;
+        padding-left: 8rem;
+        padding-top: 5rem;
+    }
+}

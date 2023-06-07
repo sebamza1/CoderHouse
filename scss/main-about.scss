@@ -1,0 +1,72 @@
+.main-about {
+    width: 90%;
+    display: grid;
+
+    .presentacion {
+        width: 100%;
+        padding: 3rem;
+    
+        h1 {
+            padding-bottom: 2rem;
+        }
+
+        .ratio iframe {
+            border-radius: 25px;
+            border: 1px solid rgb(71, 70, 70);
+            box-shadow: 2px 3px 15px rgb(59, 59, 59);
+            grid-column: span 5;
+            width: 105%;
+            height: 100%;
+        }
+
+    }
+
+    .nosotros {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.25fr 1fr 1fr;
+        column-gap: 4rem;
+        padding-left: 3rem;
+
+        p {
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            display: grid;
+        }
+
+        img {
+            border-radius: 25px;
+            border: 1px solid rgb(71, 70, 70);
+            box-shadow: 2px 3px 15px rgb(59, 59, 59);
+            width: 100%;
+        }
+
+    }
+
+
+    .ubicacion {
+        width: 90%;
+        padding: 3rem;
+
+        h1 {
+            padding-bottom: 2rem;
+        }
+
+        .ratio iframe {
+            border-radius: 25px;
+            border: 1px solid rgb(71, 70, 70);
+            box-shadow: 2px 3px 15px rgb(59, 59, 59);
+            grid-column: span 5;
+            width: 90%;
+            height: 100%;
+        }
+
+    }
+    
+
+    
+
+
+
+}
