@@ -426,11 +426,12 @@ footer ul {
 
     /*******/
     .main-contactos {
-        padding-left: 0.0rem;
+        padding-left: 2rem;
+        
     }
 
     .main-contactos form {
-        width: 100vw;
+        width: 90vw;
         padding-bottom: 1.5rem;
     }
 
