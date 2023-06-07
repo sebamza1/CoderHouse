@@ -257,7 +257,7 @@ main .main-index img {
     display: grid;
     justify-content: center;
     align-items: center;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
   
     background-color: black;
 }
