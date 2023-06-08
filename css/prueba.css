@@ -188,45 +188,46 @@ main .main-index img {
     display: grid;
     justify-content: center;
     align-items: center;
-    padding-top: 2rem;
-    /*padding-left: 3rem;*/
     background-color: black;
 }
-
 
 .main-eventos .fotos {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    height: 100%;
-    gap: 3rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 1rem;
+    column-gap: 1rem;
 }
 
-.uno,
-.dos {
-    display: grid;
-    align-content: center;
-    justify-content: center;
-}
-
-
-.main-eventos .fotos .card {
+.main-eventos img {
     border-radius: 25px;
     border: 1px solid rgb(71, 70, 70);
     box-shadow: 2px 3px 15px rgb(59, 59, 59);
-    width: 90%;
+    width: 100%;
+    
 }
 
-.main-books p {
-    width: 90%;
-    padding-left: 0.0rem;
+
+.main-eventos .fotos .expan{
+    display: grid;
+    grid-column: 2 span;
+    height: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
 }
 
-.main-eventos .cierre {
-    width: 85%;
+.main-eventos .fotos .expan img{
+    width: 100%;
+    height: 40vh;
 }
+
+.main-eventos p {
+    width: 95%;
+    padding-bottom: 2rem;
+    display: grid;
+    padding-left: 3rem;
+}
+
 
 /*********************************************/
 .main-books .fotos {
@@ -245,9 +246,12 @@ main .main-index img {
     box-shadow: 2px 3px 15px rgb(59, 59, 59);
     width: 90%;
 }
+
 .main-books p{
-    width: 100%;
+    width: 95%;
     padding-bottom: 2rem;
+    padding-left: 3rem;
+    display: grid;
 }
 /*********************************************/
 
@@ -328,7 +332,8 @@ footer ul {
     /**agrupa tags no visibles en media query***/
     .contenedor .ocultar,
     .contenedor .frase,
-    .contenedor .indicador {
+    .contenedor .indicador,
+    .contenedor .main-eventos .fotos .expan {
         display: none;
     }
 
@@ -354,34 +359,13 @@ footer ul {
 
     /*******/
     .main-eventos {
-        width: 95vw;
-        gap: 0.5rem;
-        padding-left: 0rem;
-        text-align: center;
+        width: 90vw;
+        padding-left: 2rem;
     }
-
-    .main-eventos .cierre {
-        padding-left: 0.0rem;
-    }
-
-    /*******/
 
     .main-eventos .fotos {
-        display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1ff;
-        gap: 0rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        padding-left: 0rem;
-        
-        text-align: center;
-    }
-
-    .main-eventos .fotos .card {
-        width: 100%;
-        justify-content: center;
-        align-items: center;
+        grid-template-rows: 1fr;
     }
 
     /*******/
