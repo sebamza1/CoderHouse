@@ -182,32 +182,8 @@ main .main-index img {
 }
 
 /*********************************************/
-.main-books,
-.main-eventos {
-    width: 90%;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-}
 
-.main-eventos .fotos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    padding: 1rem;
-    column-gap: 1rem;
-}
-
-.main-eventos img {
-    border-radius: 25px;
-    border: 1px solid rgb(71, 70, 70);
-    box-shadow: 2px 3px 15px rgb(59, 59, 59);
-    width: 100%;
-    
-}
-
-
+/*
 .main-eventos .fotos .expan{
     display: grid;
     grid-column: 2 span;
@@ -220,16 +196,19 @@ main .main-index img {
     width: 100%;
     height: 40vh;
 }
-
-.main-eventos p {
-    width: 95%;
-    padding-bottom: 2rem;
-    display: grid;
-    padding-left: 3rem;
-}
+/*
 
 
 /*********************************************/
+.main-books,
+.main-eventos {
+    width: 90%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
 .main-books .fotos {
     display: grid;
     height: 100%;
@@ -240,14 +219,25 @@ main .main-index img {
     row-gap: 2rem;
 }
 
-.main-books .fotos img{
+
+.main-eventos .fotos {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    row-gap: 2rem;
+}
+
+.main-books .fotos img, .main-eventos .fotos img{
     border-radius: 25px;
     border: 1px solid rgb(71, 70, 70);
     box-shadow: 2px 3px 15px rgb(59, 59, 59);
     width: 90%;
 }
 
-.main-books p{
+.main-books p, .main-eventos p{
     width: 95%;
     padding-bottom: 2rem;
     padding-left: 3rem;
@@ -308,8 +298,6 @@ footer ul {
 /***************************************************************/
 @media screen and (max-width:768px) {
 
-  
-
     header .dropdown {
         display: block;
     }
@@ -347,8 +335,6 @@ footer ul {
     .main-about {
        width: 90vw;
        padding-left: 2rem;
-    
-
     }
 
     .main-about .nosotros {
@@ -356,11 +342,17 @@ footer ul {
         grid-template-rows: 1fr;
     }
 
-
     /*******/
     .main-eventos {
         width: 90vw;
         padding-left: 2rem;
+        display: grid;
+        row-gap: 1rem;
+        text-align: center;
+        align-items: center;
+        text-align: center;
+
+
     }
 
     .main-eventos .fotos {
@@ -377,9 +369,7 @@ footer ul {
         text-align: center;
         align-items: center;
         text-align: center;
-        
     }
-    
     
     .main-books .fotos {
         display: grid;
@@ -410,7 +400,6 @@ footer ul {
     /*******/
     .main-contactos {
         padding-left: 2rem;
-        
     }
 
     .main-contactos form {
@@ -461,7 +450,6 @@ footer ul {
         display: grid;
         grid-template-columns:10fr 1fr ;
         grid-template-rows: 1fr 10fr 0.5fr;
-       
     }
 
     .contenedor .nav-izq,
@@ -482,15 +470,12 @@ footer ul {
     .main-about {
        width: 90vw;
        padding-left: 2rem;
-    
-
     }
 
     .main-about .nosotros {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
-
 
     /*******/
     .main-eventos {
@@ -512,9 +497,7 @@ footer ul {
         text-align: center;
         align-items: center;
         text-align: center;
-        
     }
-    
     
     .main-books .fotos {
         display: grid;
