@@ -12,6 +12,7 @@ body {
 .contenedor {
     background-color: rgb(0, 0, 0);
     height: 100vh;
+    width: 100vw;
     display: grid;
     grid-template-columns: 0.7fr 2fr 10fr 0.7fr;
     grid-template-rows: 1fr 10fr 0.5fr;
@@ -23,7 +24,7 @@ body {
 }
 
 ul {
-    /***falta agregar a sass*****/
+  
     padding-left: 0.25rem !important;
     /* modifica propiedades que agraga oboostrap por defecto*/
     margin-bottom: 0.25rem !important;
@@ -37,7 +38,11 @@ header {
     grid-area: header;
     align-items: center;
     border-bottom: 1px solid whitesmoke;
+    width: 100%;
+    height: 100%;
 }
+
+
 
 header .dropdown {
     display: none;
@@ -45,15 +50,15 @@ header .dropdown {
 
 /*********************************************/
 .contenedor nav {
-    border: 1px solid whitesmoke;
     display: grid;
     justify-content: space-between;
     background-color: black;
     padding: 0.25px;
+    height: 100%;
+    width: 100%;
 }
 
 .contenedor nav ul {
-    /***falta agregar a sass pa abajo tambien****/
     list-style: none;
     display: grid;
     align-items: center;
@@ -78,6 +83,8 @@ a {
     justify-content: space-evenly;
     padding-top: 3rem;
     font-size: 2rem;
+    height: 100%;
+    width: 100%;
 }
 
 .contenedor .indicador{
@@ -85,6 +92,8 @@ a {
    display: grid;
    align-items: center;
     justify-content: center;
+    height: 100%;
+    width: 100%;
 }
 
 .contenedor .indicador h1{
@@ -97,31 +106,30 @@ a {
 /**********************************************/
 
 main .main-index {
+    height: 100%;
+    width: 100%;
+    display: grid;
     background-color: rgb(5, 5, 5);
-    /*no agregue*/
     grid-area: main;
     color: whitesmoke;
-    /*no agregue*/
+    justify-content: center;
+    align-items: center;
 }
 
-main .main-index img {
-    /**crear el achivo para main-index**/
-    display: grid;
-    text-align: center;
-    justify-content: center;
-    width: 80%;
-    padding-left: 8rem;
-    padding-top: 5rem;
+main .main-index img {   
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5rem;
+    padding-right: 5rem;
 }
 
 /**********************************************/
 
-.main-about {
-    /**crear el achivo para main-index**/
+.main-about {               /**falta revisar annhco y alto**/
     width: 90%;
     display: grid;
     justify-content: center;
-    /*padding-left: 5rem;*/
+
 }
 
 .main-about h1 {
@@ -183,23 +191,6 @@ main .main-index img {
 
 /*********************************************/
 
-/*
-.main-eventos .fotos .expan{
-    display: grid;
-    grid-column: 2 span;
-    height: 100%;
-    padding-top: 0.5rem;
-    padding-bottom: 1.5rem;
-}
-
-.main-eventos .fotos .expan img{
-    width: 100%;
-    height: 40vh;
-}
-/*
-
-
-/*********************************************/
 .main-books,
 .main-eventos {
     width: 90%;
@@ -209,7 +200,7 @@ main .main-index img {
     background-color: black;
 }
 
-.main-books .fotos {
+.main-books .fotos{
     display: grid;
     height: 100%;
     grid-template-columns: 1fr 1fr 1fr;
@@ -229,6 +220,7 @@ main .main-index img {
     padding-top: 2rem;
     row-gap: 2rem;
 }
+
 
 .main-books .fotos img, .main-eventos .fotos img{
     border-radius: 25px;
@@ -250,7 +242,6 @@ main .main-index img {
     display: grid;
     justify-content: center;
     align-items: center;
-    
     background-color: black;
 }
 
@@ -266,26 +257,30 @@ main .main-index img {
 /*********************************************/
 .nav-izq {
     grid-area: nav-izq;
+    border-right: 1px solid whitesmoke;
 }
 
 .nav-der {
     grid-area: nav-der;
+    border-left: 1px solid whitesmoke;
 }
 
 /*********************************************/
 footer {
+    height: 100%;
+    width: 100%;
     border-top: 1px solid whitesmoke;
     grid-area: footer;
     display: grid;
     justify-content: center;
-    height: 100%;
-    width: 100%;
     color: whitesmoke;
     background-color: black;
+    padding-bottom: 0.5rem;
 }
 
 footer p {
     text-align: center;
+    margin-bottom: 0;
 }
 
 footer ul {
@@ -296,23 +291,26 @@ footer ul {
 }
 
 /***************************************************************/
+
+/**********************************************************/
 @media screen and (max-width:768px) {
 
     header .dropdown {
         display: block;
     }
 
-    header {
-        margin-top: 0.5rem;
-        padding-left: 0rem;
+    .contenedor {
         width: 100vw;
-        gap: 0.5rem;
-        justify-content: space-evenly;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.7fr 10fr .7fr;
     }
 
-    .contenedor {
-        width: 90vw;
-        height: 100vh;
+    header {
+        justify-content: center;
+        padding-left: 0rem;
+    
     }
 
     .contenedor .nav-izq,
@@ -327,11 +325,11 @@ footer ul {
 
     /***********************main********************************/
 
-    .main-index img {
-        display: block;
+    main .main-index img{
+        padding-right: 0rem;
+        padding-bottom: 0rem;
     }
 
-    /*******/
     .main-about {
        width: 90vw;
        padding-left: 2rem;
@@ -351,8 +349,6 @@ footer ul {
         text-align: center;
         align-items: center;
         text-align: center;
-
-
     }
 
     .main-eventos .fotos {
@@ -384,6 +380,7 @@ footer ul {
 
     .main-books .fotos img{
         width: 90%;
+        height: 80%;
     }
 
     .main-books p{
@@ -410,151 +407,6 @@ footer ul {
     .row.g-3.needs-validation {
         flex-direction: column;
     }
-
-    /**********************footer**********************/
-
-    footer {
-        width: 100vw;
-        padding-left: 0rem;
-        /*MODIFICACION*/
-        text-align: center;
-    }
-
-    footer ul {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        padding-left: 2rem;
-        margin-bottom: 1rem;
-    }
 }
 
-/**********************************************/
-@media screen and (max-width:992px) {
-
-    header .dropdown {
-        display: block;
-    }
-
-    header {
-        margin-top: 0.5rem;
-        padding-left: 0rem;
-        width: 100vw;
-        gap: 0.5rem;
-        justify-content: space-evenly;
-    }
-
-    .contenedor {
-        background-color: rgb(0, 0, 0);
-        height: 100vh;
-        display: grid;
-        grid-template-columns:10fr 1fr ;
-        grid-template-rows: 1fr 10fr 0.5fr;
-    }
-
-    .contenedor .nav-izq,
-    .contenedor .nav-der,
-    /**agrupa tags no visibles en media query***/
-    .contenedor .ocultar,
-    .contenedor .main-eventos .fotos .expan {
-        display: none;
-    }
-
-    /***********************main********************************/
-
-    .main-index img {
-        display: block;
-    }
-
-    /*******/
-    .main-about {
-       width: 90vw;
-       padding-left: 2rem;
-    }
-
-    .main-about .nosotros {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-    }
-
-    /*******/
-    .main-eventos {
-        width: 90vw;
-        padding-left: 2rem;
-    }
-
-    .main-eventos .fotos {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-    }
-
-    /*******/
-    .main-books {
-        display: grid;
-        width: 95vw;
-        gap: 0.5rem;
-        padding-left: 0rem;
-        text-align: center;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .main-books .fotos {
-        display: grid;
-        height: 100%;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        row-gap: 2rem;
-        padding-left: 3rem;
-    }   
-
-    .main-books .fotos img{
-        width: 90%;
-    }
-
-    .main-books p{
-        width: 90%;
-        padding-top: 1rem;
-        padding-left: 3rem;
-    }
-
-    /*******/
-    .main-contactos h1 {
-        display: block;
-    }
-
-    /*******/
-    .main-contactos {
-        padding-left: 2rem;
-        
-    }
-
-    .main-contactos form {
-        width: 90vw;
-        padding-bottom: 1.5rem;
-    }
-
-    .row.g-3.needs-validation {
-        flex-direction: column;
-    }
-
-    /**********************footer**********************/
-
-    footer {
-        width: 100vw;
-        padding-left: 0rem;
-        /*MODIFICACION*/
-        text-align: center;
-    }
-
-    footer ul {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        padding-left: 2rem;
-        margin-bottom: 1rem;
-    }
-}
-
+/***********************************/
