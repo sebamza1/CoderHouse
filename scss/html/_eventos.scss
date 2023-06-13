@@ -1,0 +1,26 @@
+@import "../estilos-base/variables";
+@import "../estilos-base/mixin";
+@import "../estilos-base/extend";
+
+.contenedor{
+    main{
+        .main-eventos{
+            @include tamanio;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            .fotos{
+                @extend %grilla-fotos;
+                img{
+                    @extend %imagenes;
+                }
+            }
+            p{
+                width: 95%;
+                padding-bottom: 2rem;
+                padding-left: 3rem;
+                text-align:left; 
+            }
+        }
+    }
+}

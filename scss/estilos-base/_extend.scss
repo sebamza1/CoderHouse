@@ -1,0 +1,63 @@
+@import "../estilos-base/mixin";
+
+
+%nav {
+    display: grid;
+    justify-content: space-between;
+    padding: 0.25px;
+    height: 100%;
+    width: 100%;
+}
+
+%ul {
+    list-style: none;
+    display: grid;
+    align-items: center;
+    padding-left: 0.25rem !important;
+    /* modifica propiedades que agraga oboostrap por defecto*/
+    margin-bottom: 0.25rem !important;
+    /* modifica propiedades que agraga oboostrap por defecto*/
+}
+
+%li {
+    display: grid;
+    transform: rotate(-90deg);
+}
+
+%a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+%frase {
+    @include tamanio;
+    grid-area: frase;
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2rem;
+}
+
+%imagenes{
+    border-radius: 25px;
+    border: 1px solid rgb(71, 70, 70);
+    box-shadow: 2px 3px 15px rgb(59, 59, 59);
+    width: $ancho-100;
+}
+
+%about-p{
+    padding-top: 3rem; 
+}
+
+%ocultar{
+    display: none;
+}
+
+%grilla-fotos{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}

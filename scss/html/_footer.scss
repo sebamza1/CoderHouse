@@ -1,0 +1,32 @@
+@import "../estilos-base/mixin";
+@import "../estilos-base/extend";
+
+
+
+    footer {
+        @include tamanio;
+        border-top: 1px solid whitesmoke;
+        grid-area: footer;
+        display: grid;
+        justify-content: center;
+        padding-bottom: 0.5rem;
+        p{
+            text-align: center;
+            margin-bottom: 0;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 5rem;
+            padding-left: 0.25rem !important;
+            /* modifica propiedades que agraga oboostrap por defecto*/
+            margin-bottom: 0.25rem !important;
+            /* modifica propiedades que agraga oboostrap por defecto*/
+            li{
+                a{
+                    @extend %a;
+                }
+            }
+        }
+    }

@@ -1,0 +1,23 @@
+@import "../estilos-base/variables";
+@import "../estilos-base/mixin";
+@import "../estilos-base/extend";
+
+.contenedor{
+    main{
+        .main-contactos{
+            width: 95%;
+            height: $alto-100;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            padding-top: 1rem;
+            h1{
+                display: none;
+            }
+            form{
+                width: 95%;
+                padding-bottom: 1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@import "../estilos-base/variables";
+
+@mixin tamanio{
+    width: $ancho-100;
+    height: $alto-100;
+}
+
+@mixin tamanio-comb{
+    width: $ancho-100;
+    height: $alto-vh;
+}
+
+@mixin grid($grid-columns,$grid-rows,$areas){
+    display: grid;
+    grid-template-columns:$grid-columns; 
+    grid-template-rows:$grid-rows; 
+    grid-template-areas:$areas;
+}
