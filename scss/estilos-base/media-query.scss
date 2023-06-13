@@ -1,0 +1,84 @@
+@import "../estilos-base/variables";
+@import "../estilos-base/mixin";
+@import "../estilos-base/extend";
+
+@media screen and (max-width:768px) {
+    body {
+        .contenedor {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.7fr 10fr .7fr;
+            header {
+                .dropdown {
+                    display: block;
+                }
+            }
+            .nav-izq, .nav-der, .frase, .indicador, .ocultar, .main-eventos .fotos .expan {
+                display: none;
+               
+            }
+            main {
+                .main-index{
+                    img{
+                        padding-right: 0rem;
+                        padding-bottom: 0rem;
+                        width: 80vw;
+                        height: 80vh;
+                    }
+                }
+            
+                .main-eventos, .main-books {
+                    width: 90vw;
+                    padding-left: 2rem;
+                    display: grid;
+                    row-gap: 1rem;
+                    text-align: center;
+                    align-items: center;
+                    text-align: center;
+                }
+            
+                .main-eventos, .main-books{
+                    .fotos {
+                        grid-template-columns: 1fr;
+                        grid-template-rows: 1fr;
+                    }
+                }
+            
+                /*******/
+            
+                .main-contactos h1 {
+                    display: block;
+                }
+            
+                /*******/
+                .main-contactos {
+                    padding-left: 2rem;
+                }
+            
+                .main-contactos form {
+                    width: 90vw;
+                    padding-bottom: 1.5rem;
+                }
+            
+                .row.g-3.needs-validation {
+                    flex-direction: column;
+                }
+                .main-about {
+                    width: 90vw;
+                    padding-left: 2rem;
+                    .nosotros {
+                        grid-template-columns: 1fr;
+                        grid-template-rows: 1fr;
+                    }
+                }
+            }
+             
+                
+            
+        }
+        
+    }
+}
+
+
+   

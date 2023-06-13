@@ -1,0 +1,21 @@
+@import "../estilos-base/extend";
+
+
+.contenedor{
+    main{
+        .main-books{
+            .fotos{
+                @extend %grilla-fotos;
+            }
+            img{
+                @extend %imagenes;
+            }
+            p{
+                width: 95%;
+                padding-bottom: 2rem;
+                padding-left: 3rem;
+                text-align:left; 
+            }
+        }
+    }
+}

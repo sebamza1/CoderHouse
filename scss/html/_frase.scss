@@ -1,0 +1,14 @@
+@import "../estilos-base/extend";
+
+.contenedor{
+    .frase{
+        @extend %frase;
+    }
+    .indicador{
+        @extend %frase;
+        h1{
+            font-size: 2rem;
+            transform: rotate(-90deg);
+        }
+    }
+}

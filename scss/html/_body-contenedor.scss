@@ -1,0 +1,25 @@
+
+@import "../estilos-base/variables";
+@import "../estilos-base/mixin";
+@import "../html/header";
+@import "../html/nav";
+@import "../html/footer";
+@import "../html/frase";
+@import "../html/main-index";
+@import "../html/about.scss";
+@import "../html/books";
+@import "../html/contactos";
+@import "../html/eventos";
+@import "../estilos-base/media-query.scss";
+
+body{
+    background-color: $color-fondo;
+    color: $color-fuente;
+
+    .contenedor{
+        @include tamanio-comb;
+        @include grid(0.7fr 2fr 10fr 0.7fr, 1fr 10fr 0.5fr, "header header header header"
+        "nav-izq frase main nav-der"
+        "footer footer footer footer");
+    }
+}

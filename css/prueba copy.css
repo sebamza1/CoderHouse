@@ -10,6 +10,7 @@ body {
 }
 
 .contenedor {
+    background-color: rgb(0, 0, 0);
     width: 100%;
     height: 100vh;
     display: grid;
@@ -49,6 +50,7 @@ header .dropdown {
 .contenedor nav {
     display: grid;
     justify-content: space-between;
+    background-color: black;
     padding: 0.25px;
     height: 100%;
     width: 100%;
@@ -74,6 +76,7 @@ a {
 
 .contenedor .frase {
     grid-area: frase;
+    background-color: black;
     display: grid;
     justify-content: space-evenly;
     padding-top: 3rem;
@@ -86,7 +89,7 @@ a {
    grid-area: frase;
    display: grid;
    align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 100%;
     width: 100%;
 }
@@ -104,7 +107,9 @@ main .main-index {
     height: 100%;
     width: 100%;
     display: grid;
+    background-color: rgb(5, 5, 5);
     grid-area: main;
+    color: whitesmoke;
     justify-content: center;
     align-items: center;
 }
@@ -129,7 +134,7 @@ main .main-index img {
     padding-top: 3rem;
     padding-bottom: 1rem;
 }
-/*****************************************/
+
 .main-about .presentacion {
     width: 100%;
     color: whitesmokes;
@@ -138,7 +143,7 @@ main .main-index img {
 .main-about .presentacion h1 {
     padding-bottom: 1rem;
 }
-/*****************************************/
+
 .main-about .presentacion .ratio iframe {
     border-radius: 25px;
     border: 1px solid rgb(71, 70, 70);
@@ -159,7 +164,7 @@ main .main-index img {
 }
 
 .main-about .nosotros p, .main-about .nosotros .ocultar p {
-    padding-top: 3rem;  /***falta agregar esto al scss***/
+    padding-top: 3rem;
 }
 
 .main-about .nosotros img {
@@ -229,6 +234,7 @@ main .main-index img {
 
 .main-contactos h1 {
     display: none;
+
 }
 
 .main-contactos form {
@@ -237,7 +243,7 @@ main .main-index img {
 }
 
 /*********************************************/
-.contenedor nav .nav-izq {
+.nav-izq {
     grid-area: nav-izq;
     border-right: 1px solid whitesmoke;
 }
