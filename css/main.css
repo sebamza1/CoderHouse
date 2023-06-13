@@ -610,8 +610,8 @@ body {
   background-color: black;
   color: whitesmoke; }
   body .contenedor {
-    width: 100%;
     height: 100vh;
+    width: 100vw;
     display: grid;
     grid-template-columns: 0.7fr 2fr 10fr 0.7fr;
     grid-template-rows: 1fr 10fr 0.5fr;
