@@ -48,7 +48,8 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 2rem;
-  padding: 2rem; }
+  padding: 2rem;
+  transition: transform 0.2s ease; }
 
 .contenedor main .main-books, .contenedor main .main-eventos {
   width: 100%;
@@ -128,7 +129,8 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 2rem;
-  padding: 2rem; }
+  padding: 2rem;
+  transition: transform 0.2s ease; }
 
 .contenedor main .main-books, .contenedor main .main-eventos {
   width: 100%;
@@ -199,7 +201,8 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 2rem;
-  padding: 2rem; }
+  padding: 2rem;
+  transition: transform 0.2s ease; }
 
 .contenedor main .main-books, .contenedor main .main-eventos {
   width: 100%;
@@ -224,6 +227,8 @@
     border: 1px solid #474646;
     box-shadow: 2px 3px 15px #3b3b3b;
     width: 100%; }
+  .contenedor main .main-books .fotos img:hover {
+    transform: scale(1.05); }
 
 .contenedor .nav-izq, .contenedor .nav-der {
   background-color: black;
@@ -263,7 +268,8 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 2rem;
-  padding: 2rem; }
+  padding: 2rem;
+  transition: transform 0.2s ease; }
 
 .contenedor main .main-books, .contenedor main .main-eventos {
   width: 100%;
@@ -288,6 +294,8 @@
     border: 1px solid #474646;
     box-shadow: 2px 3px 15px #3b3b3b;
     width: 100%; }
+  .contenedor main .main-eventos .fotos img:hover {
+    transform: scale(1.05); }
 
 .contenedor {
   background-color: black;
@@ -339,8 +347,9 @@
   grid-area: frase;
   align-items: start;
   font-size: 2rem;
-  padding-top: 100%;
-  background-color: black; }
+  padding-top: 10rem;
+  background-color: black;
+  padding-right: 2rem; }
   .contenedor .indicador h1 {
     display: grid;
     position: fixed;
@@ -356,7 +365,8 @@
   width: 100%;
   height: 100%;
   padding-left: 1rem;
-  padding-right: 1rem; }
+  padding-right: 1rem;
+  padding-top: 0.5rem; }
   .contenedor header p {
     font-size: 1.5rem;
     text-align: center; }
@@ -413,7 +423,8 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 2rem;
-  padding: 2rem; }
+  padding: 2rem;
+  transition: transform 0.2s ease; }
 
 .contenedor main .main-books, .contenedor main .main-eventos {
   width: 100%;
