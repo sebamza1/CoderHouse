@@ -1,15 +1,23 @@
 @import "../estilos-base/mixin";
 
-.contenedor{
+.contenedor {
     header {
         display: flex;
-        gap: 3rem;
-        padding-left: 5rem;
-        grid-area: header;
+        padding-left: 2rem;
         align-items: center;
+        justify-content: space-between;
+        grid-area: header;
         border-bottom: 1px solid whitesmoke;
-        @include tamanio;
-        .dropdown {
+        @include t-100;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        p {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        button {
             display: none;
         }
     }

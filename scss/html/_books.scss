@@ -1,20 +1,31 @@
 @import "../estilos-base/extend";
+@import "../estilos-base/mixin";
+@import "../estilos-base/variables";
 
+.contenedor {
+    main {
+        .main-books {
+            h2 {
+                padding-top: 2rem;
+                padding-left: 2rem;
+            }
 
-.contenedor{
-    main{
-        .main-books{
-            .fotos{
-                @extend %grilla-fotos;
+            background-color: $fondo;
+            @extend %main-albums;
+
+            .fotos {
+                @extend %estructura-albums;
+
+                img {
+                    border-radius: 25px;
+                    border: 1px solid rgb(71, 70, 70);
+                    box-shadow: 2px 3px 15px rgb(59, 59, 59);
+                    width: 100%;
+                }
             }
-            img{
-                @extend %imagenes;
-            }
-            p{
-                width: 95%;
-                padding-bottom: 2rem;
-                padding-left: 3rem;
-                text-align:left; 
+
+            p {
+                @extend %p-albums;
             }
         }
     }
