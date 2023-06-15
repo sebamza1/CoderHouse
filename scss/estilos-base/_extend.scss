@@ -29,8 +29,11 @@
             color: whitesmoke;
             text-decoration: none;
         }
+       
     }
 }
+    
+
 
 %img {
     border-radius: 25px;
@@ -46,6 +49,7 @@
     grid-template-rows: 1fr 1fr 1fr;
     gap: 2rem;
     padding: 2rem;
+    transition: transform 0.2s ease;
 }
 
 %main-albums {
