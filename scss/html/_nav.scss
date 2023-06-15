@@ -1,25 +1,6 @@
 @import "../estilos-base/extend";
 
-
 .contenedor {
-    .nav-der {
-        @extend %nav;
-        grid-area: nav-der;
-        border-left: 1px solid whitesmoke;
-
-        ul {
-            @extend %ul;
-
-            li {
-                @extend %li;
-
-                a {
-                    @extend %a;
-                }
-            }
-        }
-    }
-
     .nav-izq {
         @extend %nav;
         grid-area: nav-izq;
@@ -27,14 +8,16 @@
 
         ul {
             @extend %ul;
+        }
+    }
 
-            li {
-                @extend %li;
+    .nav-der {
+        @extend %nav;
+        grid-area: nav-der;
+        border-left: 1px solid whitesmoke;
 
-                a {
-                    @extend %a;
-                }
-            }
+        ul {
+            @extend %ul
         }
     }
 }

@@ -1,13 +1,15 @@
-@import "../estilos-base/variables";
-@import "../estilos-base/mixin";
 @import "../estilos-base/extend";
+@import "../estilos-base/mixin";
+@import "../estilos-base/variables";
 
 .contenedor {
     main {
         .main-about {
-            width: 90%;
+            background-color: $fondo;
             display: grid;
             justify-content: center;
+            padding-right: 2rem;
+            padding-left: 2rem;
 
             h1 {
                 padding-top: 3rem;
@@ -15,51 +17,37 @@
             }
 
             .presentacion {
-                width: $ancho-100;
-                color: $color-fuente;
-
                 .ratio iframe {
-                    @extend %imagenes;
-                    grid-column: span 5;
-                    height: $alto-100;
+                    @include t-100;
                 }
             }
+
             .nosotros {
-                width: $ancho-100;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: 1fr 1fr;
                 column-gap: 4rem;
                 padding-left: 0.0rem;
+
+                p,
+                .ocultar p {
+                    padding-top: 3rem;
+                    /***falta agregar esto al scss***/
+                }
+
                 img {
-                    @extend %imagenes;
+                    @extend %img;
                 }
-                .p{
-                    @extend %about-p;
-                }
-                .ocultar{
-                    p{
-                        @extend %about-p;
-                    }
-                    img{
-                        @extend %imagenes;
-                    }
-                }
-                
             }
+
             .ubicacion {
                 width: 100%;
+
                 .ratio iframe {
-                    @extend %imagenes;
-                    grid-column: span 5;
-                    height: $alto-100;
+                    @extend %img;
+                    width: 100%;
                 }
-
             }
-
         }
-        
     }
 }
-
-

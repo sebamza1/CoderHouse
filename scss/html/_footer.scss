@@ -1,32 +1,36 @@
 @import "../estilos-base/mixin";
-@import "../estilos-base/extend";
+@import "../estilos-base/variables";
 
-
-
+.contenedor {
     footer {
-        @include tamanio;
-        border-top: 1px solid whitesmoke;
-        grid-area: footer;
+        @include t-100;
         display: grid;
-        justify-content: center;
-        padding-bottom: 0.5rem;
-        p{
+        grid-area: footer;
+        border-top: 1px solid whitesmoke;
+        padding-bottom: 0;
+        background-color: $fondo;
+
+        p {
             text-align: center;
             margin-bottom: 0;
         }
+
         ul {
-            list-style: none;
             display: flex;
+            list-style: none;
             justify-content: center;
-            gap: 5rem;
-            padding-left: 0.25rem !important;
-            /* modifica propiedades que agraga oboostrap por defecto*/
-            margin-bottom: 0.25rem !important;
-            /* modifica propiedades que agraga oboostrap por defecto*/
-            li{
-                a{
-                    @extend %a;
+            margin-bottom: 0.5rem;
+
+            li {
+                padding-inline-start: 0px;
+                text-align: center;
+                padding-right: 2rem;
+
+                a {
+                    color: $fuente;
+                    text-decoration: none;
                 }
             }
         }
     }
+}

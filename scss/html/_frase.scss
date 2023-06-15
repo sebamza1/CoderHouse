@@ -1,14 +1,25 @@
-@import "../estilos-base/extend";
-
-.contenedor{
-    .frase{
-        @extend %frase;
+.contenedor {
+    .frase {
+        display: grid;
+        grid-area: frase;
+        font-size: 3rem;
+        padding-left: 1.5rem;
     }
-    .indicador{
-        @extend %frase;
-        h1{
-            font-size: 2rem;
+
+    .indicador {
+        display: grid;
+        grid-area: frase;
+        align-items: start;
+        font-size: 2rem;
+        padding-top: 100%;
+        background-color: black;
+
+        h1 {
+            display: grid;
+            position: fixed;
             transform: rotate(-90deg);
+
+
         }
     }
 }
