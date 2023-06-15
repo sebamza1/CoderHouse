@@ -489,7 +489,14 @@
         display: grid;
         grid-template-columns: 1fr; }
         .contenedor main .main-books .fotos .ocultar, .contenedor main .main-eventos .fotos .ocultar {
-          display: none; } }
+          display: none; }
+    .contenedor main .main-about .nosotros {
+      height: 100vh;
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr; }
+      .contenedor main .main-about .nosotros .ocultar {
+        display: none; } }
 
 * {
   margin: 0rem;
