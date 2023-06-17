@@ -16,7 +16,9 @@
                 display: block;
             }
         }
-        .main-eventos, .main-books {
+
+        .main-eventos,
+        .main-books {
             width: 90vw;
             padding-left: 2rem;
             display: grid;
@@ -25,8 +27,9 @@
             align-items: center;
             text-align: center;
         }
-    
-        .main-eventos, .main-books{
+
+        .main-eventos,
+        .main-books {
             .fotos {
                 grid-template-columns: 1fr;
                 grid-template-rows: 1fr;
@@ -40,34 +43,39 @@
         height: 100vh;
         @include estructura(0.7fr 10fr 0.5fr, 1fr);
         @include areas("header" "main" "footer");
-        
+
         .nav-izq,
         .nav-der,
         .frase,
-        .indicador
-        {
+        .indicador {
             display: none;
         }
 
-        main{
-            .main-books, .main-eventos{
+        main {
+
+            .main .main-books,
+            .main-eventos {
                 padding-right: 2rem;
-                .fotos{
+
+                .fotos {
                     display: grid;
                     grid-template-columns: 1fr;
-                    .ocultar{
-                        display:none;
+
+                    .ocultar {
+                        display: none;
                     }
                 }
             }
-            .main-about{
-                .nosotros{
-                    height: 100vh;
-                    @include estructura(1fr, 1fr);
-                    .ocultar{
-                        display:none;
+
+            .main-about {
+                .nosotros {
+                    height: 100%;
+                    @include estructura(1fr 1fr, 1fr);
+
+                    .ocultar {
+                        display: none;
                     }
-                    
+
                 }
             }
         }
