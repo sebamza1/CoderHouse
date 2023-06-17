@@ -1,14 +1,16 @@
 @import "../estilos-base/mixin";
-.contenedor{
+
+.contenedor {
     main {
-        .main-index{
-            
+        .main-index {
+
             @include t-100;
             display: grid;
-            
+
             justify-content: center;
             align-items: center;
-            img{
+
+            img {
                 justify-content: center;
                 align-items: center;
                 @include t-100;
