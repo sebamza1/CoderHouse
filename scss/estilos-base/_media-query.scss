@@ -54,10 +54,20 @@
                 padding-right: 2rem;
                 .fotos{
                     display: grid;
-                grid-template-columns: 1fr;
+                    grid-template-columns: 1fr;
                     .ocultar{
                         display:none;
                     }
+                }
+            }
+            .main-about{
+                .nosotros{
+                    height: 100vh;
+                    @include estructura(1fr, 1fr);
+                    .ocultar{
+                        display:none;
+                    }
+                    
                 }
             }
         }
