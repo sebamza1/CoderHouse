@@ -50,6 +50,9 @@
         }
 
         main{
+
+            .main
+
             .main-books, .main-eventos{
                 padding-right: 2rem;
                 .fotos{
@@ -62,8 +65,8 @@
             }
             .main-about{
                 .nosotros{
-                    height: 100vh;
-                    @include estructura(1fr, 1fr);
+                    height: 100%;
+                    @include estructura(1fr 1fr,1fr);
                     .ocultar{
                         display:none;
                     }

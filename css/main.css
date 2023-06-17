@@ -14,10 +14,9 @@
   background-color: black;
   display: grid;
   padding-bottom: 2rem;
-  align-items: start;
+  /*align-items: start;*/
   gap: 0.5rem;
   padding-top: 2rem;
-  padding-left: 0.5rem;
   width: 100%; }
 
 .contenedor .nav-izq ul, .contenedor .nav-der ul {
@@ -29,8 +28,8 @@
   padding-inline-start: 0;
   gap: 6rem; }
   .contenedor .nav-izq ul li, .contenedor .nav-der ul li {
-    display: grid;
-    transform: rotate(-90deg); }
+    transform: rotate(-90deg);
+    padding-bottom: 1rem; }
     .contenedor .nav-izq ul li a, .contenedor .nav-der ul li a {
       color: whitesmoke;
       text-decoration: none; }
@@ -84,8 +83,7 @@
     padding-left: 0.0rem; }
     .contenedor main .main-about .nosotros p,
     .contenedor main .main-about .nosotros .ocultar p {
-      padding-top: 3rem;
-      /***falta agregar esto al scss***/ }
+      padding-top: 3rem; }
   .contenedor main .main-about .ubicacion {
     width: 100%; }
     .contenedor main .main-about .ubicacion .ratio iframe {
@@ -95,10 +93,9 @@
   background-color: black;
   display: grid;
   padding-bottom: 2rem;
-  align-items: start;
+  /*align-items: start;*/
   gap: 0.5rem;
   padding-top: 2rem;
-  padding-left: 0.5rem;
   width: 100%; }
 
 .contenedor .nav-izq ul, .contenedor .nav-der ul {
@@ -110,8 +107,8 @@
   padding-inline-start: 0;
   gap: 6rem; }
   .contenedor .nav-izq ul li, .contenedor .nav-der ul li {
-    display: grid;
-    transform: rotate(-90deg); }
+    transform: rotate(-90deg);
+    padding-bottom: 1rem; }
     .contenedor .nav-izq ul li a, .contenedor .nav-der ul li a {
       color: whitesmoke;
       text-decoration: none; }
@@ -167,10 +164,9 @@
   background-color: black;
   display: grid;
   padding-bottom: 2rem;
-  align-items: start;
+  /*align-items: start;*/
   gap: 0.5rem;
   padding-top: 2rem;
-  padding-left: 0.5rem;
   width: 100%; }
 
 .contenedor .nav-izq ul, .contenedor .nav-der ul {
@@ -182,8 +178,8 @@
   padding-inline-start: 0;
   gap: 6rem; }
   .contenedor .nav-izq ul li, .contenedor .nav-der ul li {
-    display: grid;
-    transform: rotate(-90deg); }
+    transform: rotate(-90deg);
+    padding-bottom: 1rem; }
     .contenedor .nav-izq ul li a, .contenedor .nav-der ul li a {
       color: whitesmoke;
       text-decoration: none; }
@@ -234,10 +230,9 @@
   background-color: black;
   display: grid;
   padding-bottom: 2rem;
-  align-items: start;
+  /*align-items: start;*/
   gap: 0.5rem;
   padding-top: 2rem;
-  padding-left: 0.5rem;
   width: 100%; }
 
 .contenedor .nav-izq ul, .contenedor .nav-der ul {
@@ -249,8 +244,8 @@
   padding-inline-start: 0;
   gap: 6rem; }
   .contenedor .nav-izq ul li, .contenedor .nav-der ul li {
-    display: grid;
-    transform: rotate(-90deg); }
+    transform: rotate(-90deg);
+    padding-bottom: 1rem; }
     .contenedor .nav-izq ul li a, .contenedor .nav-der ul li a {
       color: whitesmoke;
       text-decoration: none; }
@@ -389,10 +384,9 @@
   background-color: black;
   display: grid;
   padding-bottom: 2rem;
-  align-items: start;
+  /*align-items: start;*/
   gap: 0.5rem;
   padding-top: 2rem;
-  padding-left: 0.5rem;
   width: 100%; }
 
 .contenedor .nav-izq ul, .contenedor .nav-der ul {
@@ -404,8 +398,8 @@
   padding-inline-start: 0;
   gap: 6rem; }
   .contenedor .nav-izq ul li, .contenedor .nav-der ul li {
-    display: grid;
-    transform: rotate(-90deg); }
+    transform: rotate(-90deg);
+    padding-bottom: 1rem; }
     .contenedor .nav-izq ul li a, .contenedor .nav-der ul li a {
       color: whitesmoke;
       text-decoration: none; }
@@ -444,6 +438,7 @@
   border-right: 1px solid whitesmoke; }
 
 .contenedor .nav-der {
+  padding-right: 3rem;
   grid-area: nav-der;
   border-left: 1px solid whitesmoke; }
 
@@ -483,17 +478,17 @@
     .contenedor .frase,
     .contenedor .indicador {
       display: none; }
-    .contenedor main .main-books, .contenedor main .main-eventos {
+    .contenedor main .main .main-books, .contenedor main .main-eventos {
       padding-right: 2rem; }
-      .contenedor main .main-books .fotos, .contenedor main .main-eventos .fotos {
+      .contenedor main .main .main-books .fotos, .contenedor main .main-eventos .fotos {
         display: grid;
         grid-template-columns: 1fr; }
-        .contenedor main .main-books .fotos .ocultar, .contenedor main .main-eventos .fotos .ocultar {
+        .contenedor main .main .main-books .fotos .ocultar, .contenedor main .main-eventos .fotos .ocultar {
           display: none; }
     .contenedor main .main-about .nosotros {
-      height: 100vh;
+      height: 100%;
       display: grid;
-      grid-template-rows: 1fr;
+      grid-template-rows: 1fr 1fr;
       grid-template-columns: 1fr; }
       .contenedor main .main-about .nosotros .ocultar {
         display: none; } }

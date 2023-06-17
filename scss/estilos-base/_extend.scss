@@ -5,10 +5,9 @@
     background-color: $fondo ;
     display: grid;
     padding-bottom: 2rem;
-    align-items: start;
+    /*align-items: start;*/
     gap: 0.5rem;
     padding-top: 2rem;
-    padding-left: 0.5rem;
     width: 100%;
 }
 
@@ -22,8 +21,11 @@
     gap: 6rem;
 
     li {
-        display: grid;
+        
         transform: rotate(-90deg);
+        
+        padding-bottom: 1rem;
+        
 
         a {
             color: whitesmoke;
