@@ -5,6 +5,7 @@
         @include estructura(0.7fr 10fr 0.5fr, 2fr 10fr);
         @include areas("header header" "frase main " "footer footer");
         width: 100%;
+       
 
         .nav-izq,
         .nav-der {
@@ -66,6 +67,7 @@
                     }
                 }
             }
+
 
             .main-about {
                 .nosotros {
