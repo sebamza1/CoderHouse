@@ -2,26 +2,26 @@
 
 .contenedor {
     .nav-izq {
-
-        @extend %nav;
+        display:grid;
         grid-area: nav-izq;
+        @extend %nav;
         border-right: 1px solid whitesmoke;
 
         ul {
             @extend %ul;
         }
     }
+    
+       
+        .nav-der {
+            padding-right: 3rem;
+            @extend %nav;
+            grid-area: nav-der;
+            border-left: 1px solid whitesmoke;
 
-    .nav-der {
-
-        padding-right: 3rem;
-        @extend %nav;
-        grid-area: nav-der;
-        border-left: 1px solid whitesmoke;
-
-        ul {
-            @extend %ul;
-
+            ul {
+                @extend %ul;
+            }
         }
-    }
+    
 }
