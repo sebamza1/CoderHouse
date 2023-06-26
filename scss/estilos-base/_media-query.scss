@@ -6,6 +6,7 @@
         @include areas("header header" "frase main " "footer footer");
         width: 100%;
 
+
         .nav-izq,
         .nav-der {
             display: none;
@@ -17,23 +18,31 @@
             }
         }
 
-        .main-eventos,
-        .main-books {
-            width: 90vw;
-            padding-left: 2rem;
-            display: grid;
-            row-gap: 1rem;
-            text-align: center;
-            align-items: center;
-            text-align: center;
-        }
+        main {
 
-        .main-eventos,
-        .main-books {
-            .fotos {
-                grid-template-columns: 1fr;
-                grid-template-rows: 1fr;
+            .main-eventos,
+            .main-books {
+                width: 90vw;
+                padding-left: 2rem;
+                display: grid;
+                row-gap: 1rem;
+                text-align: center;
+                align-items: center;
+                text-align: center;
+
+                .fotos {
+                    display: grid;
+                    @include estructura(1fr 1fr 1fr, 1fr 1fr);
+
+                    .mq1 {
+                        display: none;
+                    }
+                }
+
+
             }
+
+
         }
     }
 }
@@ -44,8 +53,6 @@
         @include estructura(0.7fr 10fr 0.5fr, 1fr);
         @include areas("header" "main" "footer");
 
-        .nav-izq,
-        .nav-der,
         .frase,
         .indicador {
             display: none;
@@ -61,7 +68,7 @@
                     display: grid;
                     grid-template-columns: 1fr;
 
-                    .ocultar {
+                    .mq2 {
                         display: none;
                     }
                 }
@@ -70,7 +77,7 @@
             .main-about {
                 .nosotros {
                     height: 100%;
-                    @include estructura(1fr 1fr, 1fr);
+                    @include estructura(1fr, 1fr);
 
                     .ocultar {
                         display: none;

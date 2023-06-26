@@ -17,32 +17,37 @@
             }
 
             .presentacion {
-                .ratio iframe {
-                    @include t-100;
+                .ratio {
+                    iframe {
+                        @extend %img;
+                        @include t-100;
+                    }
                 }
             }
+        }
 
-            .nosotros {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1fr 1fr;
-                column-gap: 4rem;
-                padding-left: 0.0rem;
+        .nosotros {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            column-gap: 4rem;
+            padding-left: 0.0rem;
 
-                p,
-                .ocultar p {
-                    padding-top: 3rem;
-                }
-
-                img {
-                    @extend %img;
-                }
+            p,
+            .ocultar p {
+                padding-top: 3rem;
             }
 
-            .ubicacion {
-                width: 100%;
+            img {
+                @extend %img;
+            }
+        }
 
-                .ratio iframe {
+        .ubicacion {
+            width: 100%;
+
+            .ratio {
+                iframe {
                     @extend %img;
                     width: 100%;
                 }

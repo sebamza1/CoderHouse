@@ -1,52 +1,26 @@
- @import "../estilos-base/mixin";
+@import "../estilos-base/mixin";
 
- .contenedor {
-     header {
-         display: flex;
-         padding-left: 2rem;
-         align-items: center;
-         justify-content: space-between;
-         grid-area: header;
-         border-bottom: 1px solid whitesmoke;
-         @include t-100;
-         padding-left: 1rem;
-         padding-right: 1rem;
-         padding-top: 0.5rem;
+.contenedor {
+    header {
+        display: flex;
+        padding-left: 2rem;
+        align-items: center;
+        justify-content: space-between;
+        grid-area: header;
+        border-bottom: 1px solid whitesmoke;
+        @include t-100;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
 
-         p {
-             font-size: 1.5rem;
-             text-align: center;
-             font-family: 'Dancing Script', cursive;
-         }
+        p {
+            font-size: 1.5rem;
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+        }
 
-         button {
-             display: none;
-         }
-     }
-
-     @import "../estilos-base/mixin";
-
-     .contenedor {
-         header {
-             display: flex;
-             padding-left: 2rem;
-             align-items: center;
-             justify-content: space-between;
-             grid-area: header;
-             border-bottom: 1px solid whitesmoke;
-             @include t-100;
-             padding-left: 1rem;
-             padding-right: 1rem;
-             padding-top: 0.5rem;
-
-             p {
-                 font-size: 1.5rem;
-                 text-align: center;
-             }
-
-             button {
-                 display: none;
-             }
-         }
-     }
- }
+        button {
+            display: none;
+        }
+    }
+}
