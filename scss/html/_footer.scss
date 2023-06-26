@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "../estilos-base/mixin";
 @import "../estilos-base/variables";
 
@@ -36,4 +37,44 @@
             }
         }
     }
+=======
+@import "../estilos-base/mixin";
+@import "../estilos-base/variables";
+
+.contenedor {
+    footer {
+        @include t-100;
+        display: grid;
+        grid-area: footer;
+        border-top: 1px solid whitesmoke;
+        padding-bottom: 0;
+        background-color: $fondo;
+       
+        
+        p {
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            margin-bottom: 0.5rem;
+            
+
+            li {
+                padding-inline-start: 0px;
+                text-align: center;
+                padding-right: 2rem;
+                
+                a {
+                    color: $fuente;
+                    text-decoration: none;
+                    
+                }
+            }
+        }
+    }
+>>>>>>> aff376cd474ba50ebe62e705aff5532516681dac
 }

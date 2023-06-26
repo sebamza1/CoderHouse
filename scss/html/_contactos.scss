@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "../estilos-base/extend";
 @import "../estilos-base/mixin";
 @import "../estilos-base/variables";
@@ -30,4 +31,38 @@
         }
 
     }
+=======
+@import "../estilos-base/extend";
+@import "../estilos-base/mixin";
+@import "../estilos-base/variables";
+
+.contenedor {
+    main {
+        .main-contactos {
+            h2 {
+                display: none;
+            }
+
+            width: 100%;
+            height: 100%;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            padding-top: 1rem;
+
+            h1 {
+                display: none;
+            }
+
+            form {
+                width: 95%;
+                padding-bottom: 1rem;
+                width: 100%;
+                height: 100%;
+                padding-left: 1rem;
+            }
+        }
+
+    }
+>>>>>>> aff376cd474ba50ebe62e705aff5532516681dac
 }

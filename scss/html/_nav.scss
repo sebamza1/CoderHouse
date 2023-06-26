@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "../estilos-base/extend";
 
 .contenedor {
@@ -24,4 +25,32 @@
             }
         }
     
+=======
+@import "../estilos-base/extend";
+
+.contenedor {
+    .nav-izq {
+        display:grid;
+        grid-area: nav-izq;
+        @extend %nav;
+        border-right: 1px solid whitesmoke;
+
+        ul {
+            @extend %ul;
+        }
+    }
+    
+       
+        .nav-der {
+            padding-right: 3rem;
+            @extend %nav;
+            grid-area: nav-der;
+            border-left: 1px solid whitesmoke;
+
+            ul {
+                @extend %ul;
+            }
+        }
+    
+>>>>>>> aff376cd474ba50ebe62e705aff5532516681dac
 }

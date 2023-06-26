@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "../estilos-base/mixin";
 
 @media screen and(max-width: 900px) {
@@ -82,4 +83,90 @@
             }
         }
     }
+=======
+@import "../estilos-base/mixin";
+
+@media screen and(max-width: 900px) {
+    .contenedor {
+        @include estructura(0.7fr 10fr 0.5fr, 2fr 10fr);
+        @include areas("header header" "frase main " "footer footer");
+        width: 100%;
+       
+
+        .nav-izq,
+        .nav-der {
+            display: none;
+        }
+
+        header {
+            button {
+                display: block;
+            }
+        }
+
+        .main-eventos,
+        .main-books {
+            width: 90vw;
+            padding-left: 2rem;
+            display: grid;
+            row-gap: 1rem;
+            text-align: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .main-eventos,
+        .main-books {
+            .fotos {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:640px) {
+    .contenedor {
+        height: 100vh;
+        @include estructura(0.7fr 10fr 0.5fr, 1fr);
+        @include areas("header" "main" "footer");
+
+        .nav-izq,
+        .nav-der,
+        .frase,
+        .indicador {
+            display: none;
+        }
+
+        main {
+
+            .main .main-books,
+            .main-eventos {
+                padding-right: 2rem;
+
+                .fotos {
+                    display: grid;
+                    grid-template-columns: 1fr;
+
+                    .ocultar {
+                        display: none;
+                    }
+                }
+            }
+
+
+            .main-about {
+                .nosotros {
+                    height: 100%;
+                    @include estructura(1fr 1fr, 1fr);
+
+                    .ocultar {
+                        display: none;
+                    }
+
+                }
+            }
+        }
+    }
+>>>>>>> aff376cd474ba50ebe62e705aff5532516681dac
 }

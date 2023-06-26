@@ -405,8 +405,12 @@
   padding-top: 0.5rem; }
   .contenedor header p {
     font-size: 1.5rem;
+<<<<<<< HEAD
     text-align: center;
     font-family: 'Dancing Script', cursive; }
+=======
+    text-align: center; }
+>>>>>>> aff376cd474ba50ebe62e705aff5532516681dac
   .contenedor header button {
     display: none; }
 
