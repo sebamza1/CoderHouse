@@ -2,31 +2,35 @@
 @import "../estilos-base/variables";
 
 %nav {
-    background-color: $fondo ;
-    display: grid;
-    padding-bottom: 5rem;
+    background-color: $fondo;
+    padding-bottom: 2rem;
     gap: 0.5rem;
     padding-top: 2rem;
     width: 100%;
-    
+        
 }
 
 %ul {
     position: fixed;
     list-style: none;
-    display: grid;
+    /*display: grid;*/
+    display:flex;/**/
+    flex-direction: column;/**/
+    justify-content: space-between;/**/
+    align-items: center; /**/
+    height: 65%;
     margin-block-end: 0;
     margin-bottom: 0;
     padding-inline-start: 0;
-    gap: 6rem;
-
+    /*gap: 4rem;*/
+    gap: 0;
+    padding-bottom:6rem;
+    
     li {
-
+        display: flex;
         transform: rotate(-90deg);
-
-        padding-bottom: 1rem;
-
-
+        padding-bottom: 0.5rem;
+       
         a {
             color: whitesmoke;
             text-decoration: none;
