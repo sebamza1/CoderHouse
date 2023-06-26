@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import "../estilos-base/variables";
 @import "../estilos-base/mixin";
 @import "../html/main-index";
@@ -20,31 +19,8 @@
         display: grid;
         grid-area: main;
         height: 100%;
-        background-color:$fondo;
+        background-color: $fondo;
     }
-=======
-@import "../estilos-base/variables";
-@import "../estilos-base/mixin";
-@import "../html/main-index";
-@import "../html/about";
-@import "../html/contactos";
-@import "../html/books";
-@import "../html/eventos";
 
-.contenedor {
-    background-color: $fondo;
-    color: $fuente;
-    @include t-comb;
-    @include estructura(0.5fr 10fr 0.5fr, 0.7fr 1.5fr 10fr 0.7fr);
-    @include areas("header header header header"
-        "nav-izq frase main nav-der"
-        "footer footer footer footer");
 
-    main {
-        display: grid;
-        grid-area: main;
-        height: 100%;
-        background-color:$fondo;
-    }
->>>>>>> aff376cd474ba50ebe62e705aff5532516681dac
 }

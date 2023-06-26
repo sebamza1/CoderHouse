@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import "../estilos-base/mixin";
 
 .contenedor {
@@ -18,25 +17,4 @@
             }
         }
     }
-=======
-@import "../estilos-base/mixin";
-
-.contenedor {
-    main {
-        .main-index {
-
-            @include t-100;
-            display: grid;
-
-            justify-content: center;
-            align-items: center;
-
-            img {
-                justify-content: center;
-                align-items: center;
-                @include t-100;
-            }
-        }
-    }
->>>>>>> aff376cd474ba50ebe62e705aff5532516681dac
 }

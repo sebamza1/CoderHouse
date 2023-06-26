@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @mixin t-100 {
     width: 100%;
     height: 100%;
@@ -22,29 +21,4 @@
 
 @mixin areas($areas) {
     grid-template-areas: $areas;
-=======
-@mixin t-100 {
-    width: 100%;
-    height: 100%;
-}
-
-@mixin t-vh {
-    width: 100vw;
-    height: 100vh;
-}
-
-@mixin t-comb {
-    width: 100%;
-    height: 100vh;
-}
-
-@mixin estructura($rows, $columns) {
-    display: grid;
-    grid-template-rows: $rows;
-    grid-template-columns: $columns;
-}
-
-@mixin areas($areas) {
-    grid-template-areas: $areas;
->>>>>>> aff376cd474ba50ebe62e705aff5532516681dac
 }

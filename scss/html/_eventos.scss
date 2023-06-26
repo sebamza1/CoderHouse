@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import "../estilos-base/extend";
 @import "../estilos-base/mixin";
 @import "../estilos-base/variables";
@@ -34,41 +33,4 @@
             }
         }
     }
-=======
-@import "../estilos-base/extend";
-@import "../estilos-base/mixin";
-@import "../estilos-base/variables";
-
-.contenedor {
-    main {
-        .main-eventos {
-            h2 {
-                padding-top: 2rem;
-                padding-left: 2rem;
-            }
-
-            background-color: $fondo;
-            @extend %main-albums;
-
-            .fotos {
-                @extend %estructura-albums;
-
-                img {
-                    border-radius: 25px;
-                    border: 1px solid rgb(71, 70, 70);
-                    box-shadow: 2px 3px 15px rgb(59, 59, 59);
-                    width: 100%;
-                }
-
-                img:hover {
-                    transform: scale(1.05);
-                }
-            }
-
-            p {
-                @extend %p-albums;
-            }
-        }
-    }
->>>>>>> aff376cd474ba50ebe62e705aff5532516681dac
 }
